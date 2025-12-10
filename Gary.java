@@ -65,11 +65,6 @@ public class Gary {
         energy -= 5;
         happiness -= 10;
         temperature -= 2;
-
-        // Check if any stat goes below 0
-        if (health < 0 || energy < 0 || happiness < 0 || temperature < 0) {
-            System.out.println("Oh no! Gary is too sad and has run away...");
-            System.exit(0); // Exit the program
         }
 
     }
@@ -132,10 +127,6 @@ public class Gary {
         happiness += 20; // Playing makes Gary much happier
         energy -= 10; // Playing uses up energy
         health -= 5; // Playing too much can slightly reduce health
-
-        // Ensure stats don't drop below zero
-        if (health < 0) health = 0;
-        if (energy < 0) energy = 0;
         if (happiness > 100) happiness = 100;
 
         System.out.println("Gary had a great time playing!");
